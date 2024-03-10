@@ -96,14 +96,6 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
       AppBar(
         title: Text(widget.title),
         toolbarHeight: 100.0,
-        actions: [
-          IconButton(
-            icon: Icon(Icons.home),
-            onPressed: () {
-              _tabController.animateTo(0);
-            },
-          ),
-        ],
       ),
       Positioned(
         left: 0,
@@ -308,11 +300,16 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildDataRow(List<Widget> widgets) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: widgets,
-    );
-  }
+  return Row(
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    children: widgets.map((widget) {
+      return Expanded(
+        child: widget,
+      );
+    }).toList(),
+  );
+}
+
 
   @override
   Widget build(BuildContext context) {

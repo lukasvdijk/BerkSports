@@ -82,6 +82,7 @@ class _MaximaalkrachtState extends State<Maximaalkracht> {
       appBar: AppBar(
         title: Text(
           'Maximaalkracht - 5 herhalingen',
+          textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 22,
             fontWeight: FontWeight.bold,

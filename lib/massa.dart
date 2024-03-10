@@ -82,6 +82,7 @@ class _MassaState extends State<Massa> {
       appBar: AppBar(
         title: Text(
           'Massa - 10 herhalingen',
+          textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,

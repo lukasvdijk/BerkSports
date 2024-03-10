@@ -82,6 +82,7 @@ class _SnelheidState extends State<Snelheid> {
       appBar: AppBar(
         title: Text(
           'Snelheid - 20 herhalingen',
+          textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,

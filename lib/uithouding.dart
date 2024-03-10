@@ -82,6 +82,7 @@ class _UithoudingState extends State<Uithouding> {
       appBar: AppBar(
         title: Text(
           'Uithouding - 15 herhalingen',
+          textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,

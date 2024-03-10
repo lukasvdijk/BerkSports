@@ -13,7 +13,8 @@ dependencies:
   provider:
   path_provider:
   share_plus:
-  org.jetbrains.kotlin:kotlin-bom: ^1.5.31  # Kotlin BOM
+  #kotlin-bom: ^1.5.31  
+
 
 dev_dependencies:
   flutter_launcher_icons:
@@ -22,7 +23,7 @@ dev_dependencies:
   flutter_lints:
 
 flutter_launcher_icons:
-  android: "launcher_icon"
+  android: true  # Added android: true to generate launcher icons for Android
   ios: true
   image_path: assets/images/logo.png
   min_sdk_android: 26
