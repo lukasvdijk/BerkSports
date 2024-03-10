@@ -57,14 +57,14 @@ class _UithoudingState extends State<Uithouding> {
       {'exercise': 'Back extension', 'value': overlayData['Back extension'] ?? '', 'color': Colors.green, 'category': 'Onderrug'},
       {'exercise': 'Deadlift Pullthrough', 'value': overlayData['Deadlift Pullthrough'] ?? '', 'color': Colors.green, 'category': 'Onderrug'},
       {'exercise': 'One leg deadlift', 'value': overlayData['One leg deadlift'] ?? '', 'color': Colors.green, 'category': 'Onderrug'},
-      {'exercise': 'Horizontal row', 'value': overlayData['Horizontal row'] ?? '', 'color': Color(0xFFFFC716), 'category': 'Bovenrug'},
-      {'exercise': 'Lat Pulldown', 'value': overlayData['Lat Pulldown'] ?? '', 'color': Color(0xFFFFC716), 'category': 'Bovenrug'},
-      {'exercise': 'Bend over row', 'value': overlayData['Bend over row'] ?? '', 'color': Color(0xFFFFC716), 'category': 'Bovenrug'},
-      {'exercise': 'One arm row', 'value': overlayData['One arm row'] ?? '', 'color': Color(0xFFFFC716), 'category': 'Bovenrug'},
-      {'exercise': 'Biceps Curl', 'value': overlayData['Biceps Curl'] ?? '', 'color': Color(0xFFFFC716), 'category': 'Bovenrug'},
-      {'exercise': 'Shrugs', 'value': overlayData['Shrugs'] ?? '', 'color': Color(0xFFFFC716), 'category': 'Bovenrug'},
-      {'exercise': 'Reverse flies', 'value': overlayData['Reverse flies'] ?? '', 'color': Color(0xFFFFC716), 'category': 'Bovenrug'},
-      {'exercise': 'Face pulls', 'value': overlayData['Face pulls'] ?? '', 'color': Color(0xFFFFC716), 'category': 'Bovenrug'},
+      {'exercise': 'Horizontal row', 'value': overlayData['Horizontal row'] ?? '', 'color': Colors.orange, 'category': 'Bovenrug'},
+      {'exercise': 'Lat Pulldown', 'value': overlayData['Lat Pulldown'] ?? '', 'color': Colors.orange, 'category': 'Bovenrug'},
+      {'exercise': 'Bend over row', 'value': overlayData['Bend over row'] ?? '', 'color': Colors.orange, 'category': 'Bovenrug'},
+      {'exercise': 'One arm row', 'value': overlayData['One arm row'] ?? '', 'color': Colors.orange, 'category': 'Bovenrug'},
+      {'exercise': 'Biceps Curl', 'value': overlayData['Biceps Curl'] ?? '', 'color': Colors.orange, 'category': 'Bovenrug'},
+      {'exercise': 'Shrugs', 'value': overlayData['Shrugs'] ?? '', 'color': Colors.orange, 'category': 'Bovenrug'},
+      {'exercise': 'Reverse flies', 'value': overlayData['Reverse flies'] ?? '', 'color': Colors.orange, 'category': 'Bovenrug'},
+      {'exercise': 'Face pulls', 'value': overlayData['Face pulls'] ?? '', 'color': Colors.orange, 'category': 'Bovenrug'},
       {'exercise': 'Bench Press Barbell', 'value': overlayData['Bench Press Barbell'] ?? '', 'color': Colors.purple, 'category': 'Borst'},
       {'exercise': 'Bench Press Dumbell', 'value': overlayData['Bench Press Dumbell'] ?? '', 'color': Colors.purple, 'category': 'Borst'},
       {'exercise': 'Dumbell Fly', 'value': overlayData['Dumbell Fly'] ?? '', 'color': Colors.purple, 'category': 'Borst'},
@@ -105,7 +105,7 @@ class _UithoudingState extends State<Uithouding> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 buildFilterButton('Onderrug / Hamstrings', Colors.green),
-                buildFilterButton('Bovenrug / Biceps', Color(0xFFFFC716)),
+                buildFilterButton('Bovenrug / Biceps', Colors.orange),
               ],
             ),
             Container(
@@ -336,7 +336,7 @@ void _showOverlay(String exerciseId, int repetitions) async {
     builder: (BuildContext context) {
       // The rest of the dialog setup remains the same
       return AlertDialog(
-        title: Text('Hey, lekker bezig jij!'),
+        title: Text('Tuurlijk, smijt dat ijzer!'),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [

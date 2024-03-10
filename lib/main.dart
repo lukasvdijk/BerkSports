@@ -95,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     children: [
       AppBar(
         title: Text(widget.title),
-        toolbarHeight: 50.0,
+        toolbarHeight: 100.0,
         actions: [
           IconButton(
             icon: Icon(Icons.home),
@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
             height: 50.0, // Adjust the height as needed
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('/Users/lukasvandijk/dev/BerkSports/berksports/logo_breed.png'),
+                image: AssetImage('assets/images/logo_breed.png'),
                 fit: BoxFit.fitHeight,
               ),
             ),
